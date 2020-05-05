@@ -1,0 +1,27 @@
+body {
+    background-color: #fefefe;
+}
+
+section {
+    background-color: white;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: #001261;
+}
+
+.section-header {
+    color: #1460AA;
+}
+
+a {
+    color: orange;
+}
+
+nav a {
+    color: olivedrab;
+}
