@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+      </nav>
     </header>
 
     <main>
+      <header id="top">
+        <h1 class="main-heading main-heading--js">Imię i nazwisko - Homepage - Strona domowa</h1>
+      </header>
 
-        <header id="top">
-            <h1>Imię i nazwisko - Homepage - Strona domowa</h1>
-        </header>
+      <section>
+        <h2 class="section-header">Kim jestem?</h2>
+        <img src="/img/sea.jpg" alt="sea" />
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum - <a href="#notatki">Przejdź do notatek</a></p>
+      </section>
 
-        <section>
-            <h2 class="section-header">Kim jestem?</h2>
-            <img src="/img/sea.jpg" alt="sea" />
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum - <a href="#notatki">Przejdź do notatek</a></p>
-        </section>
-
-        <section id="notatki">
-            <h2 class="section-header">Notatki</h2>
-            <article>
-                <h3>HTML</h3>
-                <p>HTML Hyper Text Markup Language</p>
-            </article>
-            <article>
-                <h3>CSS</h3>
-                <p>Cascading Style Sheets</p>
-            </article>
-        </section>
-
+      <section id="notatki">
+        <h2 class="section-header">Notatki</h2>
+        <article class="week-summary">
+          <h3 class="week-summary__title">HTML</h3>
+          <p class="week-summary__description">HTML Hyper Text Markup Language</p>
+        </article>
+        <article class="week-summary week-summary--special">
+          <h3 class="week-summary__title">CSS</h3>
+          <p class="week-summary__description">Cascading Style Sheets</p>
+        </article>
+        <article class="week-summary">
+          <h3 class="week-summary__title">JS</h3>
+          <p class="week-summary__description">JavaScript</p>
+        </article>
+      </section>
     </main>
-    
+
     <footer>
-        <p>Stopka <a href="#top">Wróć na górę strony</a></p>
+      <p>Stopka <a href="#top">Wróć na górę strony</a></p>
     </footer>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
