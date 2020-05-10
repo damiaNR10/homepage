@@ -2,28 +2,52 @@ body {
   background-color: #fefefe;
 }
 
-section {
-  background-color: white;
+.favourite-tags {
+  background: gainsboro;
+  padding: 20px;
+  border-bottom: teal 1px solid;
 }
 
-h1 {
+.favourite-tags__description {
+  font-style: italic;
+}
+
+.favourite-tags__title {
+  text-align: center;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  text-align: center;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-heading {
   color: blue;
 }
 
-p {
+.main-section {
+  background-color: white;
+}
+
+.main-section__header {
   color: #001261;
 }
 
-.section-header {
+.main-section__description {
   color: #1460aa;
 }
 
-a {
+.main-section__link {
   color: orange;
-}
-
-nav a {
-  color: olivedrab;
 }
 
 .navigation {
