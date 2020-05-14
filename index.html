@@ -16,23 +16,23 @@
     </header>
 
     <main class="main">
-      <header id="top">
-        <h1 class="main-heading main-heading--js">Imię i nazwisko - Homepage - Strona domowa</h1>
+      <header class="main__haeder" id="top">
+        <h1 class="main__heading main__heading--js">Imię i nazwisko - Homepage - Strona domowa</h1>
       </header>
 
       <section class="main-section">
         <h2 class="main-section__header">Kim jestem?</h2>
-        <img src="/img/sea.jpg" alt="sea" />
+        <img class="main-section__picture" src="/img/sea.jpg" alt="sea" />
         <p class="main-section__description">Lorem ipsum</p>
         <p class="main-section__description">Lorem ipsum - <a class="main-section__link" href="#notatki">Przejdź do notatek</a></p>
         <p class="main-section__description main-section__description--js"></p>
       </section>
 
-      <section id="notatki">
+      <section class="notes" id="notatki">
         <h2 class="section-header">Notatki</h2>
         <article class="week-summary">
           <h3 class="week-summary__title">HTML</h3>
-          <p class="week-summary__description">HTML Hyper Text Markup Language</p>
+          <p class="week-summary__description">Hyper Text Markup Language</p>
         </article>
         <article class="week-summary week-summary--special">
           <h3 class="week-summary__title">CSS</h3>
@@ -42,11 +42,61 @@
           <h3 class="week-summary__title">JS</h3>
           <p class="week-summary__description">JavaScript</p>
         </article>
+        <section>
+          <h4>Lista fajnych znaczników</h4>
+          <ul class="list">
+            <li class="list__item">UL</li>
+            <li class="list__item">OL</li>
+            <li class="list__item">SECTION</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Przepis na omlet</h4>
+          <ol>
+            <li>Ubij jajka</li>
+            <li>Dodaj żółtka</li>
+            <li>Dodaj mąkę i białko</li>
+          </ol>
+        </section>
+        <section>
+          <h4>Lista znaczników</h4>
+          <dl>
+            <dt>Div</dt>
+            <dd>Opis znacznika div</dd>
+            <dt>Article</dt>
+            <dd>Opis znacznika article</dd>
+          </dl>
+        </section>
+        <section>
+          <h4>Rozpiska WTF</h4>
+          <table class="table">
+            <caption>Spis odcinków WTF - Co ten frontend?</caption>
+            <thead>
+              <tr>
+                <th>lp.</th>
+                <th>tytuł</th>
+                <th>czas trwania</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Powitanie</td>
+                <td>5min 45sec</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Pożegnanie</td>
+                <td>15min 45sec</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
     </main>
 
     <footer class="footer">
-      <p class="footer__content">Stopka <a href="#top">Wróć na górę strony</a></p>
+      <p class="footer__content">Stopka <a class="footer__link" href="#top">Wróć na górę strony</a></p>
     </footer>
 
     <script src="main.js"></script>

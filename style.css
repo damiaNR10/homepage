@@ -25,12 +25,16 @@ body {
   text-align: center;
 }
 
+.footer__link {
+  color: crimson;
+}
+
 .main {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.main-heading {
+.main__heading {
   color: blue;
 }
 
@@ -65,6 +69,18 @@ body {
 .navigation__link--homepage {
   background-color: yellow;
   color: black;
+}
+
+.list {
+  list-style: square;
+}
+
+.list__item {
+
+}
+
+.table {
+  width: 100%;
 }
 
 .week-summary {
