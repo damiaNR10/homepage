@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -20,6 +20,43 @@
       <header class="main__haeder" id="top">
         <h1 class="main__heading main__heading--js">Imię i nazwisko - Homepage - Strona domowa</h1>
       </header>
+
+      <section>
+        <form class="form" action="https://dev.cotenfrontend.pl">
+          <p>
+            <label for="firstName">Your name:</label>
+            <input class="form__item" id="firstName" name="firstName" placeholder="Enter your name">
+          </p>
+          <p>
+
+            <!-- inny sposób 'podpinania' labela do inputa -->
+            <label>Your last name:
+              <input class="form__item" id="lastName" name="lastName" placeholder="Enter your last name">
+            </label>
+          </p>
+          <p>
+            <fieldset>
+              <legend>Address</legend>
+                <label for="streetName">Street:</label>
+                <input class="form__item" id="streetName" name="streetName" placeholder="Enter your street name">
+                <label for="cityName">City:</label>
+                <input class="form__item" id="cityName" name="cityName" placeholder="Enter your city">
+            </fieldset>
+          </p>
+          <fieldset>
+            <legend>Favourite ice-cream</legend>
+            <p>
+              <input type="radio" value="vanilia" id="iceCreamVanilia" name="iceCream" >
+              <label for="iceCreamVanilia">Vanilia</label>
+            </p>
+            <p>
+              <input type="radio" value="milk" id="iceCreamMilk" name="iceCream" >
+              <label for="iceCreamMilk">Milk</label>
+            </p>
+            <input type="submit" value="Send" />
+          </fieldset>
+        </form>
+      </section>
 
       <section class="main-section">
         <h2 class="main-section__header">Kim jestem?</h2>

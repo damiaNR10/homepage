@@ -12,7 +12,13 @@ const age = 27;
 
 //Notacja fat arrow function
 const greet = (age, name) => {
-    console.log(`Cześć, mam na imie ${name} i mam ${age} lat`);
+
+    const person = {
+        age: age,
+        name: name,
+    };
+
+    console.log(`Cześć, mam na imie ${person.name} i mam ${person.age} lat`);
 }
 
 greet(age, name);
@@ -23,3 +29,7 @@ function createContent(selector, content) {
 }
 
 createContent('.main-section__description--js', 'Hello World!');
+
+if('Java' != 'JavaScript') {
+    console.log('Java to nie JS');
+}
