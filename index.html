@@ -9,23 +9,32 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="main-header">
+      <button class="hamburger hamburger--js">MENU</button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
         <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="">Nauka CSS</a>
+        <a class="navigation__link" href="">Nauka JS</a>
+        <a class="navigation__link" href="">Nauka Nauki</a>
       </nav>
     </header>
 
     <main class="main">
       <header class="main__haeder" id="top">
         <h1 class="main__heading main__heading--js">Imię i nazwisko - Homepage - Strona domowa</h1>
+        <button class="action--js">Zmień nagłówek</button>
       </header>
 
       <section>
         <form class="form" action="https://dev.cotenfrontend.pl">
           <p>
-            <label for="firstName">Your name:</label>
+            <label for="firstName">Name:</label>
             <input class="form__item" id="firstName" name="firstName" placeholder="Enter your name">
+          </p>
+          <p>
+            <label for="riddle">Riddle:</label>
+            <input class="form__item" id="riddle" name="riddle" placeholder="Enter your riddle">
           </p>
           <p>
 
@@ -63,11 +72,12 @@
         <img class="main-section__picture" src="/img/sea.jpg" alt="sea" />
         <p class="main-section__description">Lorem ipsum</p>
         <p class="main-section__description">Lorem ipsum - <a class="main-section__link" href="#notatki">Przejdź do notatek</a></p>
-        <p class="main-section__description main-section__description--js"></p>
+        <p class="main-section__description main-section__description--js">awdawdawd</p>
       </section>
 
       <section class="notes" id="notatki">
         <h2 class="section-header">Notatki</h2>
+        <div class="grid-div">
         <article class="week-summary">
           <h3 class="week-summary__title">HTML</h3>
           <p class="week-summary__description">Hyper Text Markup Language</p>
@@ -80,6 +90,7 @@
           <h3 class="week-summary__title">JS</h3>
           <p class="week-summary__description">JavaScript</p>
         </article>
+      </div>
         <section>
           <h4>Lista fajnych znaczników</h4>
           <ul class="list">
@@ -137,6 +148,6 @@
       <p class="footer__content">Stopka <a class="footer__link" href="#top">Wróć na górę strony</a></p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

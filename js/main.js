@@ -28,8 +28,23 @@ function createContent(selector, content) {
     emptySelector.innerHTML = content;
 }
 
-createContent('.main-section__description--js', 'Hello World!');
+//createContent('.main-section__description--js', 'Hello World!');
 
 if('Java' != 'JavaScript') {
     console.log('Java to nie JS');
 }
+
+const button = document.querySelector('.action--js');
+
+const myClick = () => {
+    // const emptyParagraph = document.querySelector('.main-section__description--js');
+    // emptyParagraph.innerHTML = `Cześć, mam na imie ${name} i mam ${age} lat`;
+}
+
+button.addEventListener('click', myClick);
+
+const hamburger = document.querySelector('.hamburger--js');
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+});

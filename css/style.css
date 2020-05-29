@@ -51,9 +51,26 @@ body {
   display: block;
 }
 
+.hamburger {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: pink;
+  color: black;
+}
+
+.main-header {
+  background: white;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
 .main {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
 
 .main__heading {
@@ -86,27 +103,23 @@ body {
   color: orange;
 }
 
+.main-section__picture {
+  display: block;
+  max-width: 100%;
+}
+
 .navigation {
-  background: #478a05;
   padding: 16px;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
+}
+
+.navigation--open {
+  display: block;
 }
 
 .navigation__link {
-  color: #FFFFFF;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.navigation__link--homepage {
-  background-color: yellow;
-  color: black;
+  display: block;
+  margin: 0 0 16px 0;
 }
 
 .list {
@@ -120,6 +133,7 @@ body {
 .week-summary {
   padding: 16px;
   border: 1px solid gray;
+  background-color: whitesmoke;
 }
 
 .week-summary__description {
@@ -129,6 +143,15 @@ body {
 
 .week-summary__title {
   color: aquamarine;
+}
+
+.week-summary__title::before {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: tomato;
+  border-radius: 50%;
+  content: '';
 }
 
 .week-summary--special {
@@ -176,6 +199,12 @@ body {
   body {
     background: red;
   }
+  .grid-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
   .grid-layout-main {
     display: -ms-grid;
     display: grid;
@@ -190,6 +219,30 @@ body {
   }
   .footer {
     background: green;
+  }
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    padding: 16px;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navigation__link {
+    color: red;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .navigation__link:hover {
+    color: blue;
+  }
+  .navigation__link--homepage {
+    color: black;
   }
 }
 
