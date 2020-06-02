@@ -47,7 +47,7 @@ body {
   color: white;
 }
 
-.form__item {
+.form____item {
   display: block;
 }
 
@@ -162,6 +162,12 @@ body {
   background: greenyellow;
 }
 
+.grid__child {
+  padding: 10px;
+  background: red;
+  border: 1px solid black;
+}
+
 .grid-box {
   display: -ms-grid;
   display: grid;
@@ -170,12 +176,6 @@ body {
   -webkit-column-gap: 16px;
           column-gap: 16px;
   row-gap: 16px;
-}
-
-.grid__child {
-  padding: 10px;
-  background: red;
-  border: 1px solid black;
 }
 
 .article {

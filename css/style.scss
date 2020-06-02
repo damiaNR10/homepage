@@ -15,37 +15,37 @@ html {
     background: gainsboro;
     padding: 20px;
     border-bottom: teal 1px solid;
-  }
-  
-  .favourite-tags__description {
-    font-style: italic;
-  }
-  
-  .favourite-tags__title {
-    text-align: center;
+
+    &__description {
+      font-style: italic;
+    }
+
+    &__title {
+      text-align: center;
+    }
   }
   
   .footer {
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .footer__content {
-    text-align: center;
-  }
-  
-  .footer__link {
-    color: crimson;
+
+    &__content {
+      text-align: center;
+    }
+
+    &__link {
+      color: crimson;
+    }
   }
 
   .form {
       background-color: black;
       padding: 16px;
       color: white;
-  }
 
-  .form__item {
-      display: block;
+      &____item {
+        display: block;
+    }
   }
 
   // .grid-div {
@@ -73,10 +73,10 @@ html {
   .main {
     max-width: 1000px;
     margin: 60px auto 0;
-  }
-  
-  .main__heading {
-    color: blue;
+
+    &__heading {
+      color: blue;
+    }
   }
   
   .main-section {
@@ -84,41 +84,41 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .main-section__header {
-    color: #001261;
-  }
-  
-  .main-section__description {
-    color: #1460aa;
-  }
-  
-  .main-section__link {
-    color: orange;
-  }
-  
-  .main-section__picture {
-    display: block;
-    max-width: 100%;
+
+    &__header {
+      color: #001261;
+    }
+
+    &__description {
+      color: #1460aa;
+    }
+
+    &__link {
+      color: orange;
+    }
+
+    &__picture {
+      display: block;
+      max-width: 100%;
+    }
   }
 
   .navigation {
     padding: 16px;
     display: none;
-  }
 
-  .navigation--open {
-    display: block;
-  }
-  
-  .navigation__link {
-    display: block;
-    margin: 0 0 16px 0;
-  }
-  
-  .navigation__link--homepage {
+    &--open {
+      display: block;
+    }
 
+    &__link {
+      display: block;
+      margin: 0 0 16px 0;
+
+      &--homepage {
+
+      }
+    }
   }
   
   .notes {
@@ -127,10 +127,10 @@ html {
   
   .list {
     list-style: square;
-  }
+
+    &__item {
   
-  .list__item {
-  
+    }
   }
   
   .table {
@@ -141,34 +141,40 @@ html {
     padding: 16px;
     border: 1px solid gray;
     background-color: whitesmoke;
-  }
-  
-  .week-summary__description {
-    color: darkgoldenrod;
-    margin-bottom: 20px;
-  }
-  
-  .week-summary__title {
-    color: aquamarine;
-  }
 
-  .week-summary__title::before {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: tomato;
-    border-radius: 50%;
-    content: '';
-  }
-  
-  .week-summary--special {
-    border-color: darkslateblue;
+    &__description {
+      color: darkgoldenrod;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      color: aquamarine;
+
+      &::before {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: tomato;
+        border-radius: 50%;
+        content: '';
+      }
+    }
+
+    &--special {
+      border-color: darkslateblue;
+    }
   }
 
 
   //grid test:
   .grid {
     background: greenyellow;
+
+    &__child {
+      padding: 10px;
+      background: red;
+      border: 1px solid black;
+    }
   }
 
   .grid-box {
@@ -176,12 +182,6 @@ html {
     grid-template-columns: 1fr 3fr;
     column-gap: 16px;
     row-gap: 16px;
-  }
-
-  .grid__child {
-    padding: 10px;
-    background: red;
-    border: 1px solid black;
   }
 
 
@@ -253,20 +253,20 @@ html {
       border-radius: 8px;
       display: flex;
       justify-content: center;
-    }
 
-    .navigation__link {
-      color: red;
-      display: inline-block;
-      margin-right: 20px;
-    }
+      &__link {
+        color: red;
+        display: inline-block;
+        margin-right: 20px;
 
-    .navigation__link:hover {
-      color: blue;
-    }
+        &:hover {
+          color: blue;
+        }
 
-    .navigation__link--homepage {
-      color: black;
+        &--homepage {
+          color: black;
+        }
+      }
     }
   }
 
