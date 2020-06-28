@@ -1,3 +1,5 @@
+@import "modules/week-summary.scss";
+
 html {
     box-sizing: border-box;
   }
@@ -136,35 +138,6 @@ html {
   .table {
     width: 100%;
   }
-  
-  .week-summary {
-    padding: 16px;
-    border: 1px solid gray;
-    background-color: whitesmoke;
-
-    &__description {
-      color: darkgoldenrod;
-      margin-bottom: 20px;
-    }
-
-    &__title {
-      color: aquamarine;
-
-      &::before {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background: tomato;
-        border-radius: 50%;
-        content: '';
-      }
-    }
-
-    &--special {
-      border-color: darkslateblue;
-    }
-  }
-
 
   //grid test:
   .grid {

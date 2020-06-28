@@ -41,6 +41,8 @@ const myClick = () => {
     // emptyParagraph.innerHTML = `Cześć, mam na imie ${name} i mam ${age} lat`;
 }
 
+//Burgermenu
+
 button.addEventListener('click', myClick);
 
 const hamburger = document.querySelector('.hamburger--js');
@@ -48,3 +50,35 @@ hamburger.addEventListener('click', () => {
     const nav = document.querySelector('.navigation--js');
     nav.classList.toggle('navigation--open');
 });
+
+//Import / Export test
+
+import person1 from './person.js';
+
+//console.log(person1);
+
+const person = {
+    name: 'Jan',
+    nazwisko: 'Kowalski',
+    wiek: 32
+}
+
+localStorage.setItem('person', JSON.stringify(person));
+
+//console.log(JSON.parse(localStorage.getItem('person')));
+
+const entry = localStorage.getItem('entry');
+let result = '';
+
+if(entry) {
+    result = entry;
+}
+
+const entryInput = document.querySelector('.input--js');
+const entryButton = document.querySelector('.button--js');
+
+entryInput.value = result;
+
+entryButton.addEventListener('click', () => {
+    localStorage.setItem('entry', entryInput.value);
+})
