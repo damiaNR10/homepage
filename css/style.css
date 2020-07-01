@@ -26,6 +26,28 @@
   border-color: darkslateblue;
 }
 
+@-webkit-keyframes imgRotate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes imgRotate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -134,6 +156,8 @@ body {
 .main-section__picture {
   display: block;
   max-width: 100%;
+  -webkit-animation: imgRotate 0.5s alternate infinite;
+          animation: imgRotate 0.5s alternate infinite;
 }
 
 .navigation {

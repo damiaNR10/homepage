@@ -82,3 +82,20 @@ entryInput.value = result;
 entryButton.addEventListener('click', () => {
     localStorage.setItem('entry', entryInput.value);
 })
+
+const list = document.querySelector('.list--js');
+
+fetch('https://api.github.com/users/damiaNR10/repos').
+then(resp => resp.json()).
+then(resp => {
+    for(let repo of resp) {
+        const {name, html_url} = repo;
+
+        const myTemplate = `<li class="list__item"><a title="Link do repozytorium na github" href="${html_url}">${name}</a></li>`
+
+        list.innerHTML += myTemplate;
+    }
+}).
+catch(error => {
+    console.log(error);
+});

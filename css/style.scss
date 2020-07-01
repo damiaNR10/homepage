@@ -1,5 +1,15 @@
 @import "modules/week-summary.scss";
 
+@keyframes imgRotate {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 html {
     box-sizing: border-box;
   }
@@ -102,6 +112,7 @@ html {
     &__picture {
       display: block;
       max-width: 100%;
+      animation: imgRotate 0.5s alternate infinite;
     }
   }
 
